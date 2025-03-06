@@ -11,6 +11,6 @@ def classify_image(img):
 
 image = gr.inputs.Image(shape=(192,192))
 label = gr.outputs.Label()
-examples = ['images/good_food.jpg', 'images/bad_food.jpg']
+examples = ['good_food.jpg', 'bad_food.jpg']
 
 gr.Interface(fn=classify_image, inputs=image, outputs=label), examples=examples.launch(share=True)
